@@ -1,3 +1,17 @@
-name: Your New Jekyll Site
+name: BuenaHealth.us
 markdown: redcarpet
 pygments: true
+include: [js, bootstrap.min.js, site.js]
+include: [font, glyphicons-halflings-regular.eot, glyphicons-halflings-regular.svg, glyphicons-halflings-regular.ttf, glyphicons-halflings-regular.woff]
+#include: [archives, index.html]
+destination: ../buenahealth.github.io
+#LOCAL DEVELOPMENT
+#url:         http://localhost:4000
+#PRODUCTION
+url:         http://buenahealth.us
+
+# Github repositories
+github_user: erangeljr
+github_repo_url: https://github.com/buenahealth/buenahealth.github.io
+
+
