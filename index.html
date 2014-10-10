@@ -1,13 +1,73 @@
----
-layout: default
-title: Your New Jekyll Site
----
+ <!DOCTYPE html>
+ <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Buena Health: Personal eHealth Records</title>
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="css/cerulean-bootstrap.min.css">   
+            <link href="css/site.css" rel="stylesheet" />         
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+        </head>
+        <body>
+            <div id="page">
+                <header class="container">
+                <div id="menu" class="navbar navbar-default navbar-fixed-top">
+                    <div class="navbar-header">
+                        <button class="btn btn-success navbar-toggle"
+                          data-toggle="collapse"
+                          data-target=".navbar-collapse"><span class="glyphicon glyphicon-chevron-down"></span></button>
+                        <div id="logo">
+                            <a href="."  class="navbar-brand">Buena Health</a>
+                        </div>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav active"><a href=".">Home</a></li>
+                            <li class="nav"><a href="about.html">About</a></li>
+                            <li class="nav"><a href="records.html">Records</a></li>
+                            <li class="nav"><a href="history.html">History</a></li>
+                            <li class="nav"><a href="contact.html">Contact</a></li>
+                        </ul>  
+                    </div>      
+                </div>      
+                </header>
+                <section id="body" class="container">
+                     <div class="page-header">
+                        <h1>Buena Health</h1>
+                        <p class="lead">Personal eHealth Records</p>
+                      </div>
+                       <section id="main" class="col-md-8 col-sm-9">
+                    <p class="lead">Your Health is important to you. You value having infomration at your finger tips. Buena Health is your Personal Electronic Health Record. Never have to depend on a Doctor's office to provide you your information. You can store and retrieve your vital signs and more in your own Personal eHealth Application
+                        <em>Your Health Information</em> When <strong>you</strong> want it.</p>
+                </section>
+                <section id="sidebar" class="col-md-4 col-sm-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Personal eHealth</h2>
+                        </div>
+                        <div class="panel-body">          
+                            <p>You don't have to be without your Health infomration . You can securely store and retreive your information instantly.</p>
+                        </div>
+                        <div class="panel-footer">
+                            <button class="btn btn-primary">Click Me</button>
+                        </div>      
+                    </div> 
+                </section>
+                </section>
+                <hr />
+                <footer class="container">
+                  <p>All Rights Reserved <a href="http://www.eddierangel.com/">Buena Health: Personal eHealth Recods</a>.</p>
+
+                </footer>               
+            </div>
+            
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <script type="text/javascript" src="/scripts/site.js"></script> 
+                <script type="text/javascript">
+          
+                </script>
+
+        </body>
+    </html>
