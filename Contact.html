@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitally Mine: Personal eHealth Records</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/cerulean-bootstrap.min.css">   
+  <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="page">
+    <header class="container">
+      <div id="menu" class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+          <button class="btn btn-success navbar-toggle"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"><span class="glyphicon glyphicon-chevron-down"></span></button>
+          <div id="logo">
+              <a href="."><h4>A Boiler Plate</h4></a>
+          </div>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav"><a href=".">Home</a></li>
+            <li class="nav"><a href="about.html">About</a></li>
+            <li class="nav"><a href="records.html">Records</a></li>
+            <li class="nav"><a href="history.html">History</a></li>
+            <li class="nav active"><a href="contact.html">Contact</a></li>
+          </ul>  
+        </div>      
+      </div>      
+    </header>
+
+    <section id="body" class="container">
+        <div class="page-header">
+        <ol class="breadcrumb">
+          <li><a href="/">Home</a></li>
+          <li class="active">Contact Us</li>
+        </ol>
+        <h1>Contact Us</h1>
+      </div>      
+      <p>This doesn't really work, but it's an example of a form. Easy, man. Relax, man.</p>
+
+      <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a href="#formTab" data-toggle="tab">Contact Form</a></li>
+        <li><a href="#addressTab" data-toggle="tab">Address</a></li>
+      </ul>
+
+      <div class="tab-content">
+
+      <div class="well tab-pane active" id="formTab">
+          <div class="row">
+        <form class="form-horizontal" id="contactForm">          
+          <div class="form-group">
+            <label class="control-label col-md-2" for="nameInput">Your Name</label>          
+            <div class="col-md-10">
+            <div class="input-group">           
+              <!-- //TODO: Change "^" to appropriate Chevron input-group-addon-->
+        	  <span class="input-group-addon chevron-down">!</span> 
+              <input type="text"
+                  name="nameInput"
+                  class="form-control"
+                  placeholder="e.g. Your Name"/>              
+            </div>            
+            </div>                           
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2" for="emailInput">Email</label>                  
+            <div class="col-md-10">
+              <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="email"
+                      name="emailInput"
+                      class="form-control"
+                      placeholder="e.g. Your Email"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-md-2">Favorite</label>
+            <div class="col-md-10">
+              <div class="btn-group btn-group-sm" data-toggle="buttons">
+                <label class="btn btn-success">
+                  <input type="radio">Option 1</label>
+                <label class="btn btn-success">
+                  <input type="radio">Option 2</label>
+                <label class="btn btn-success">
+                  <input type="radio">Option 3</label>
+                <div class="btn-group btn-group-sm">
+                  <button class="btn btn-success">Other</button>
+                  <button class="btn btn-success" data-toggle="dropdown"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" tabindex="-1">Option 4.1</a></li>
+                    <li><a href="#" tabindex="-1">Option 4.2</a></li>
+                    <li><a href="#" tabindex="-1">Option 4.3</a></li>
+                  </ul>
+                </div>  
+              </div>              
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <label class="control-label col-md-2">Reason</label>
+            <div class="col-md-10">
+              <div class="dropdown">
+                <button id="pickButton"class="btn btn-success">Pick One...
+                </button>
+                <button class="btn btn-success" data-toggle="dropdown">
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" id="reasonDropdown">
+                  <li><a href="#" tabindex="-1">Adoration</a></li>
+                  <li><a href="#" tabindex="-1">Ordering a White Russian</a></li>
+                  <li><a href="#" tabindex="-1">Complaint</a></li>
+                  <li><a href="#" tabindex="-1">I am lost</a></li>
+                </ul>
+              </div>            
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-2">Message</label>
+            <div class="col-md-10">
+              <textarea cols="40" rows="6" 
+                      class="form-control"
+                      placeholder="e.g. The Message"></textarea>
+            </div>          
+          </div> 
+            <div class="form-group">
+              <div class="col-md-10 col-md-offset-2">
+                <input type="submit" value="Submit" class="btn btn-success"
+                        data-toggle="tooltip"
+                        title="Press Here"
+                        data-placement="right" data-html="true"/>
+              </div>
+            </div>                    
+        </form>
+
+        <!-- <a href="#sentDialog" class="btn btn-info" data-toggle="modal">Show Dialog...</a> -->
+      </div>
+      </div>
+      <div class="well tab-pane" id="addressTab">
+        <h3>Boiler Place HQ Address</h3>
+      <div>
+        <address>
+          Boiler Plate dot com<br />
+          123 Main Street<br />
+          Bakersfield, CA 933!!<br />
+          <abbr title="Phone">P:</abbr>
+          661.664.0000
+        </address>
+        <address>
+          <strong>Support:</strong>   <a href="mailto:Support@eddierangel.com">Support@eddierangel.com</a><br />
+          <strong>Marketing:</strong> <a href="mailto:Marketing@eddierangel.com">Marketing@eddierangel.com</a>
+        </address>
+      </div>
+      </div>
+      </div>
+      
+    </section>
+    <hr />
+     <footer class="container">
+      <p>All Rights Reserved <a href="http://www.eddierangel.com/">Vitally Mine: Personal eHealth Recods</a>.</p>
+    </footer>
+  </div>
+
+  <div class="modal fade" id="sentDialog" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a href="#" class="close" data-dismiss="modal">&times;</a>
+          <h4>Thanks for shopping</h4>
+        </div>
+        <div class="modal-body">
+          <p>This form doesn't really work...Sorry</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-2.0.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
